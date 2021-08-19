@@ -21,7 +21,7 @@ navClose.addEventListener("click", () => {
 const sr = ScrollReveal({
   distance: "60px",
   duration: 1500,
-  reset: true,
+  //reset: true,
 });
 sr.reveal(`.heading, .menu-content, .title p`, {
   origin: "top",
