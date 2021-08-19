@@ -29,17 +29,17 @@
 }
 @media screen and (max-width: 767px) {
   .banner {
-    height: 400px;
+    height: 500px;
     margin-bottom: 1rem;
     &__content {
       width: 90%;
     }
     &__heading {
-      font-size: 32px;
+      font-size: 48px;
       margin-bottom: 1rem;
     }
     &__text {
-      font-size: 14px;
+      font-size: 15px;
       margin-bottom: 1rem;
       line-height: 1.2;
     }
