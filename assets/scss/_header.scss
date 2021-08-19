@@ -23,7 +23,7 @@
     color: #fff;
     font-size: 15px;
     letter-spacing: 2px;
-    font-weight: 600;
+    font-weight: 500;
     &:hover {
       color: rgb(255, 0, 149);
       transition: 0.4s ease-in-out;
@@ -52,8 +52,29 @@
     &__logo {
       font-size: 2rem;
     }
+    .nav__item {
+      margin-left: 0;
+    }
     .nav__link {
-      color: rgb(0, 0, 0);
+      position: relative;
+      padding: 4px 0;
+      font-size: 20px;
+      font-weight: 800;
+      text-transform: uppercase;
+      -webkit-text-stroke: 1px rgb(0, 255, 255);
+      // main property:
+      color: transparent;
+      // must use background-image instead of background-color
+      background: linear-gradient(rgb(0, 255, 34) 0 100%) left / 0 no-repeat;
+      background-clip: text;
+      -webkit-background-clip: text;
+      transition: 0.3s linear;
+      &:hover {
+        background-size: 100%;
+      }
+    }
+    .nav-close {
+      font-size: 30px;
     }
     .nav-close,
     .nav-toggle {
@@ -66,15 +87,15 @@
     right: -100%;
     bottom: 0;
     width: 70%;
-    align-items: center;
     row-gap: 40px;
     flex-direction: column;
     padding-top: 80px;
-    background-color: rgb(173, 173, 173);
+    background-color: #393e46;
     color: white;
+    transition: 0.3s cubic-bezier(0.23, 1, 0.32, 1);
     .nav-close {
       position: absolute;
-      top: 1.5rem;
+      top: 1.8rem;
       right: 1.8rem;
     }
   }
@@ -85,7 +106,7 @@
     }
   }
   .show {
-    right: 0 !important;
-    transition: 0.3s linear;
+    right: 0;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 }
