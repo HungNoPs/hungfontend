@@ -46,12 +46,9 @@
     color: #000;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1279px) {
   .header {
-    padding: 20px 30px;
-    &__logo {
-      font-size: 2rem;
-    }
+    padding: 20px 32px;
     .nav__item {
       margin-left: 0;
     }
@@ -108,5 +105,15 @@
   .show {
     right: 0;
     transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+}
+@media screen and (max-width: 700px) {
+  .header {
+    &__logo {
+      font-size: 2rem;
+    }
+  }
+  .nav__menu {
+    width: 100%;
   }
 }
