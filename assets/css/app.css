@@ -257,7 +257,7 @@ section {
     top: 0;
     right: -100%;
     bottom: 0;
-    width: 70%;
+    width: 100%;
     row-gap: 40px;
     flex-direction: column;
     padding-top: 80px;
