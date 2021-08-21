@@ -1,5 +1,5 @@
 html {
-  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -7,7 +7,9 @@ html {
   padding: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -36,7 +38,8 @@ img {
   max-width: 100%;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 

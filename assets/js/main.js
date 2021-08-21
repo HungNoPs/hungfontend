@@ -16,6 +16,7 @@ navToggle.addEventListener("click", () => {
 navClose.addEventListener("click", () => {
   navMenu.classList.remove("show");
 });
+
 /* ---------------------------------- */
 
 const sr = ScrollReveal({
@@ -39,4 +40,3 @@ sr.reveal(`.btn,.expert-content`, {
   origin: "bottom",
   interval: 100,
 });
-
